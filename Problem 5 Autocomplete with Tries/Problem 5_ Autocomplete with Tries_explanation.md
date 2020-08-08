@@ -4,7 +4,9 @@ Uses a dictionary to store the letters of words. Lookups and insertions should b
 
 ## Big O Space Complexity
 
-Utilizing a Python dict the worst case is O(n) where n is the length or number of individual tokens in a string.
+The suffixes function determines the overall runtime which is best described as O(n x m) where n is the 
+number of inputs and m is the length of the average input. The number of characters in an individual
+input has an impact on runtime in this scenario.
 
 ## Big O Time Complexity
 

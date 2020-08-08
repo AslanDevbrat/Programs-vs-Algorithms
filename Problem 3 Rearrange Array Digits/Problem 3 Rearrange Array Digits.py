@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[18]:
+# In[2]:
 
 
 def rearrange_digits(input_list):
@@ -45,7 +45,7 @@ def mergeSort(items):
     
     left = mergeSort(left)
     right = mergeSort(right)
-    print('left',left,'right',right)
+    #print('left',left,'right',right)
     temp = merge(left,right)
     #print(temp)
     return temp
@@ -79,10 +79,71 @@ test_function([[1, 2, 3, 4, 5], [531, 42]])
 test_case = [[4, 6, 2, 5, 9, 8], [964, 852]]
 
 
-# In[16]:
+# In[3]:
 
 
 test_function(test_case)
+
+
+# In[11]:
+
+
+# Normal cases
+print('Normal Cases:')
+print('Test 1:')
+list_num = [1, 2, 3, 4, 5]
+result = rearrange_digits(input_list=list_num)
+if result == [531, 42]:
+    print('Pass \n')
+else:
+    print("Fail \n")
+
+print('Test 2:')
+list_num = [4, 6, 2, 5, 9, 8]
+result = rearrange_digits(input_list=list_num)
+
+if result == [964,852]:
+    print('Pass \n')
+else:
+    print("Fail \n")
+
+print('Test 3:')
+list_num = [1, 2, 3]
+result = rearrange_digits(input_list=list_num)
+
+if result == [31, 2]:
+    print('Pass \n')
+else:
+    print("Fail \n")
+
+# Edge cases
+print('Edge Cases:')
+print('Test 4:')
+list_num = [1, 1, 1]
+result = rearrange_digits(input_list=list_num)
+
+if result == [11, 1]:
+    print('Pass \n')
+else:
+    print("Fail \n")
+
+print('Test 5:')
+list_num = [1]
+result = rearrange_digits(input_list=list_num)
+
+if result == [1,0]:
+    print('Pass \n')
+else:
+    print("Fail \n")
+
+print('Test 6:')
+list_num = []
+result = rearrange_digits(input_list=list_num)
+
+if result == [0,0]:
+    print('Pass \n')
+else:
+    print("Fail \n")
 
 
 # In[ ]:

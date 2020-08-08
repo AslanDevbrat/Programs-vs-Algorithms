@@ -16,5 +16,5 @@ This Solution uses a modified Binary search to find the index of a target number
 Since every time the search range is reduced to half. Therefore the time complexity is **O(log(n))**
 
 ## Space complexity
-Since its an in-place search Therefore **O(1)**
+I have used the recursive version of binary search here which causes your space complexity to be **O(log n)**.
 

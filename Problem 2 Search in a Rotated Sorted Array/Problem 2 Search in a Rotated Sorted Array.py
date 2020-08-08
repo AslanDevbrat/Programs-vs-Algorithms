@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[38]:
+# In[3]:
 
 
 def rotated_array_search(input_list, number):
@@ -69,10 +69,12 @@ test_function([[6, 7, 8, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 10])
 
 
-# In[21]:
+# In[4]:
 
 
-fastSelect([6, 7, 8, 1, 2, 3, 4],1)
+print('Edge Cases:')
+test_function([[], -1])
+test_function([[1], 0])
 
 
 # In[ ]:

@@ -24,4 +24,4 @@ If the square of the mid is smaller than the number, then it recurses on
 If the square of the mid is greater than the number, then it recurses on 
 **find_floor_sqrt( number, 0, mid-1)**
 
-In this every time the interval in which square root is to be find got halved henced the O(log(n))
+In this every time the interval in which square root is to be find got halved henced the space and TIme complexity is O(log(n))

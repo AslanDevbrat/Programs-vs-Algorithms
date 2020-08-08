@@ -6,4 +6,4 @@ The idis is to place all 0's and 2's at their right position, which will automat
 Since the function traverse only the input_list once therefore **O(n)**
 
 ## Space Complexity
-Since it is a inplace sorting it require **O(n)**  
+Since it is a inplace sorting it require **O(1)**  

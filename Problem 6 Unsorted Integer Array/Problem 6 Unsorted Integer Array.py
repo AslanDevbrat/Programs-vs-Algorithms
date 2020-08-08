@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[17]:
+# In[3]:
 
 
 def get_min_max(ints):
@@ -11,8 +11,8 @@ def get_min_max(ints):
     Args:
        ints(list): list of integers containing one or more integers
     """
-    max = -1
-    min = 999999999
+    max = -float('inf')
+    min = float('inf')
     for index,num in enumerate(ints):
         if ints[index]>max:
             max = ints[index]
