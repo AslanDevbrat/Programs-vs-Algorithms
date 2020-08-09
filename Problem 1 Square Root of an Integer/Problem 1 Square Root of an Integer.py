@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[41]:
+# In[2]:
 
 
 def sqrt(number):
@@ -15,6 +15,8 @@ def sqrt(number):
     """
     def find_floor_sqrt(number,start,stop):
         #print(start,stop)
+        if number<0:
+            return None
         if start>stop:      # Base case: Since we want floor value we returned stop
             return stop
         
@@ -37,6 +39,11 @@ print ("Pass" if  (0 == sqrt(0)) else "Fail")
 print ("Pass" if  (4 == sqrt(16)) else "Fail")
 print ("Pass" if  (1 == sqrt(1)) else "Fail")
 print ("Pass" if  (5 == sqrt(27)) else "Fail")
+
+# Edge cases
+print('Edge Cases:')
+print("Pass" if (None == sqrt(-1)) else "Fail")
+print("Pass" if (99380 == sqrt(9876543210)) else "Fail")
 
 
 # In[ ]:

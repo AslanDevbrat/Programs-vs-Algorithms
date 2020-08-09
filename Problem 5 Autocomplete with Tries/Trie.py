@@ -17,7 +17,7 @@
 # 
 # Using the code you wrote for the `TrieNode` above, try to add the suffixes function below. (Hint: recurse down the trie, collecting suffixes as you go.)
 
-# In[25]:
+# In[1]:
 
 
 ## Represents a single node in the Trie
@@ -97,7 +97,7 @@ class Trie:
 # 
 # Run the following code to add some words to your trie and then use the interactive search box to see what your code returns.
 
-# In[26]:
+# In[2]:
 
 
 MyTrie = Trie()
@@ -110,7 +110,7 @@ for word in wordList:
     MyTrie.insert(word)
 
 
-# In[27]:
+# In[3]:
 
 
 from ipywidgets import widgets
@@ -129,64 +129,37 @@ def f(prefix):
 interact(f,prefix='');
 
 
-# In[ ]:
+# In[21]:
 
 
+#Test1
+print('Pass' if MyTrie.find('a').suffixes() == ['nt', 'nthology', 'ntagonist', 'ntonym'] else 'Fail')
 
 
-
-# In[ ]:
-
+# In[22]:
 
 
+#Test2
+#EDGE CASE
+print('Pass' if MyTrie.find('').suffixes() == ['ant',
+ 'anthology',
+ 'antagonist',
+ 'antonym',
+ 'fun',
+ 'function',
+ 'factory',
+ 'trie',
+ 'trigger',
+ 'trigonometry',
+ 'tripod'] else 'Fail')
 
 
-# In[ ]:
+# In[23]:
 
 
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
+# Test 3
+# EDGE 
+print('Pass' if MyTrie.find('as')== False else 'Fail')
 
 
 # In[ ]:
